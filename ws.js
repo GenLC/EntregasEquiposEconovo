@@ -6,7 +6,7 @@ const fetcEquipos = async (x) => {
         const res = await fetch('http://192.168.0.204/restapi/v1/getEquiposEntregas')
         const data = await res.json();
 
-        if (x == 5) {
+        if (x == 60) {
             Limpiar(data.length)
         } else {
             LLenar(data);
@@ -76,7 +76,7 @@ setInterval(function () {
 
         fetcEquipos(x)
 
-    } else if (x == 5) {
+    } else if (x == 60) {
 
         fetcEquipos(x)
         x = 0;
