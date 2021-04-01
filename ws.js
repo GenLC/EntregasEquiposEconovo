@@ -21,7 +21,7 @@ const fetcEquipos = async (x) => {
 
 const LLenar = data => {
    // console.log("lleno");
-    const flex = document.querySelector(".flex");
+    const flex =document.getElementById("flex");
     const template = document.getElementById("template-card").content;
 
     const fragment = document.createDocumentFragment();
