@@ -29,7 +29,7 @@ const LLenar = data => {
 
     data.forEach(Equipo => {
 
-
+        
         template.getElementById("NombreEquipo").textContent = Equipo.Equipo;
 
 
@@ -38,6 +38,7 @@ const LLenar = data => {
 
         template.getElementById("ENTREGADOS").textContent = Equipo.Entregados;
 
+        template.getElementById('imagenEquipo').setAttribute("src","images/"+Equipo.Equipo+".jpg");
 
         const clone = template.cloneNode(true);
         fragment.appendChild(clone);
@@ -55,21 +56,22 @@ function Limpiar(cant) {
 
    for (var i = 0; i <= cant+cant; i++) {
 
-    var templateLimpiar = document.querySelectorAll('[id=templateID]');
+     var templateLimpiar = document.querySelectorAll('[id=templateID]'); //funciona
+   
     try{
         templateLimpiar[i].remove() 
-    }catch{
+    }catch(error){
        // console.log("no existe template en la posicion: "+i)
+      // console.log(error);
     }
    
    }
-
-   
 
 }
 
 
 var x = 0
+var vueltas = 0
 setInterval(function () {
     console.log(x)
     if (x == 1) {
@@ -77,7 +79,8 @@ setInterval(function () {
         fetcEquipos(x)
 
     } else if (x == 60) {
-
+        vueltas=vueltas+1;
+        console.log("Cant de ciclos: "+vueltas)
         fetcEquipos(x)
         x = 0;
         console.clear();

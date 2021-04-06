@@ -31,7 +31,7 @@
 
 <body class="bg-success">
 
-	<div class="d-flex justify-content-center align-items-center mt-0 mb-0">
+	<div class="d-flex justify-content-center align-items-center mt-5 mb-0">
 		<!-- <img src="images/logofixed.png" alt="..." class=""> -->
 
 	</div>
@@ -54,68 +54,26 @@
 
 		</header>
 
-		<div class="m-2">
+		<div class="mt-2">
 
 
-			<div class="row " id="flex">
+			<div class="row  d-flex justify-content-center align-items-center" id="flex">
+
 
 
 			</div>
 
-			<!-- <div class="row d-flex justify-content-center align-items-center ">
-
-				<div class="col-4 card">
-					<canvas id="myBarChart"></canvas>
-				</div>
-
-				<div class="col-4">
-					
-					<div class="card shadow mb-4">
-						<div class="card-header py-3">
-							<h6 class="m-0 font-weight-bold text-primary">Equipos</h6>
-						</div>
-						<div class="card-body">
-							<h4 class="small font-weight-bold">ANDRES 10 <span class="float-right">20%</span></h4>
-							<div class="progress mb-4">
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-									aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<h4 class="small font-weight-bold">ANDRES 12<span class="float-right">40%</span></h4>
-							<div class="progress mb-4">
-								<div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-									aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<h4 class="small font-weight-bold">ECOBAOS600<span class="float-right">60%</span></h4>
-							<div class="progress mb-4">
-								<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<h4 class="small font-weight-bold">ANDRES 16 <span class="float-right">80%</span></h4>
-							<div class="progress mb-4">
-								<div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-									aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<h4 class="small font-weight-bold">ANDRES 16 <span class="float-right">Complete!</span></h4>
-							<div class="progress">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-									aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div> -->
 		</div>
 
 
-		<template id="template-card">
-			<div class="col-6">
 
+		<!-- <template id="template-card">
+			<div class="col-6">
 
 				<div class="container-fluid " id="templateID">
 
 					<ul id="templateID" class="list clearfix  bg-light ">
-						<!-- row 1 -->
+			
 						<li class="clearfix alert-primary card  border-bottom-info  shadow bg-gradient-light  ">
 							<div class="row  d-flex justify-content-between align-items-center">
 
@@ -127,7 +85,7 @@
 
 								</section>
 
-								<section class="col-3 d-flex justify-content-center align-items-center mr-1">
+								<section class="col-3 d-flex justify-content-center align-items-center mr-0">
 									<div>
 										<span class="font-weight-lighter h3" id="pendientestext">PENDIENTES</span>
 										<center>
@@ -155,6 +113,64 @@
 						</li>
 
 					</ul>
+				</div>
+
+			</div>
+		</template>  -->
+
+
+		<template id="template-card">
+			<div class="" id="templateID">
+
+				<div class="container mt-3 " id="templateID">
+
+					<div id="templateID" class=" bg-light ">
+
+						<div class="card " style="width: 30rem;">
+							<img id="imagenEquipo" class="card-img-top " src=""	alt="Card image cap">
+
+							<div class="container border ">
+
+								<div class="row ">
+									<div class="col d-flex justify-content-center align-items-center mt-3">
+										<h1 class="card-title" id="NombreEquipo"></h1>
+									</div>
+								</div>
+
+								<hr>
+								<div class="row  ">
+
+									<div class="col-6  ">
+										<center>
+											<p class="btn btn-danger btn-icon-split">PENDIENTES</p>
+											<div class="col-12">
+
+												<p class="font-weight-lighter display-3 " id="PENDIENTES"> </p>
+
+											</div>
+										</center>
+									</div>
+
+									<div class="col-6 ">
+										<center>
+											<p class="btn btn-success btn-icon-split pr-1">ENTREGADOS</p>
+											<div class="col-12">
+
+												<p class="font-weight-lighter display-3" id="ENTREGADOS"> </p>
+
+
+											</div>
+										</center>
+
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+					</div>
 				</div>
 
 			</div>
